@@ -65,7 +65,7 @@ if($act=="del"){
 ?>
  
  <br> 
- <center style="font-size: 24px;"><b>รายการหนังสือ </b><button class="btn btn-outline-success" onclick="window.location='add_type.php';"><i class="bi bi-plus-circle-fill"></i></button> </center>  
+ <center style="font-size: 24px;"><b>รายการประเภทหนังสือ </b><button class="btn btn-outline-success" onclick="window.location='add_type.php';"><i class="bi bi-plus-circle-fill"></i></button> </center>  
   
 <main style="margin-top: 5px">
     <div class="container pt-4"> 

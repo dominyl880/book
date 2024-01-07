@@ -4,28 +4,29 @@ session_start();
 include("condb.php");
 include("head.php");
 ?>
-  <div style=" position: absolute;
-  left: 20px;
-  top: 90px; 
-  padding: 10px;
-  z-index: 10;  
-  background-color: #ffffff;
-  ">
-</div>
+
+<div style=" position: absolute;
+left: 20px;
+top: 90px; 
+padding: 10px;
+z-index: 10;  
+background-color: #ffffff;
+"></div>
+
 <style>
 .divider:after,
 .divider:before {
-content: "";
-flex: 1;
-height: 1px;
-background: #eee;
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
 }
 .h-custom {
-height: calc(100% - 73px);
+  height: calc(100% - 73px);
 }
 @media (max-width: 450px) {
 .h-custom {
-height: 100%;
+  height: 100%;
 }
 }
 </style>

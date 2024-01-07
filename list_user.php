@@ -136,7 +136,7 @@ if(@$act=="del"){
 </div>
  
 <br> 
- <center style="font-size: 24px;"><b>รายการหนังสือ </b><button class="btn btn-outline-success" onclick="window.location='add_user.php';"><i class="bi bi-plus-circle-fill"></i></button> </center>  
+ <center style="font-size: 24px;"><b>รายการผู้ใช้งาน </b><button class="btn btn-outline-success" onclick="window.location='add_user.php';"><i class="bi bi-plus-circle-fill"></i></button> </center>  
    
 
  
@@ -167,8 +167,8 @@ if(@$act=="del"){
                     <td><?php echo $row["username"]; ?></td>
                     <td><?php echo $row["f_name"]; echo " "; echo $row["l_name"]; ?></td> 
                     <td><?php echo $row["tel"]; ?></td> 
-                    <td><?php if($row["status_user"]=="1"){ echo "บรรณารักษ์"; }
-                              if($row["status_user"]=="2"){ echo "เจ้าหน้าที่"; }
+                    <td><?php if($row["status_user"]=="1"){ echo "เจ้าหน้าที่"; }
+                              if($row["status_user"]=="2"){ echo "บรรณารักษ์"; }
                               if($row["status_user"]=="3"){ echo "สมาชิก"; }
                         ?></td> 
 
@@ -189,7 +189,7 @@ if(@$act=="del"){
                     <?php } ?>
 
                     <td>
-                    <button type="button"  class="btn btn-danger btn-set-task" <?php if($_SESSION["status_user"]>1){ ?>disabled<?php } ?>  onclick="window.location='list_user.php?user_id=<?php echo $row['user_id']; ?>&act=del';"><i class="bi bi-trash3-fill"></i></button>
+                    <button type="button"  class="btn btn-danger btn-set-task" <?php if($_SESSION["status_user"]>$row["status_user"]){ ?>disabled<?php } ?>  onclick="window.location='list_user.php?user_id=<?php echo $row['user_id']; ?>&act=del';"><i class="bi bi-trash3-fill"></i></button>
                     </td>     
                 </tr>
                 <?php } ?>

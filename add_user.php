@@ -32,11 +32,11 @@ include("navbar.php");
             <input type="radio" class="btn-check" name="status" id="b1" autocomplete="off" value="3"  required>
             <label class="btn btn-outline-primary" for="b1">สมาชิก</label>
             <input type="radio" class="btn-check" name="status" id="b3" autocomplete="off" value="2" required>
-            <label class="btn btn-outline-success" for="b3">ผู้จัดการ</label>   
+            <label class="btn btn-outline-success" for="b3">บรรณารักษ์</label>   
  
-            <?php if(@$_SESSION["status_user"]<=1){ ?>
+            <?php if(@$_SESSION["status_user"]<1){ ?>
             <input type="radio" class="btn-check" name="status" id="b2" autocomplete="off" value="1"  required>
-            <label class="btn btn-outline-danger" for="b2">บรรณารักษ์</label>
+            <label class="btn btn-outline-danger" for="b2">เจ้าหน้าที่</label>
             <?php } ?>
 
           <div class="row g-2">

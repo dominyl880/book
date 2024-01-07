@@ -2,14 +2,15 @@
 @session_start();
 include("head.php");
 ?>
- <div style=" position: absolute;
-  left: 0px;
-  top: 10px; 
-  padding: 10px;
-  z-index: 10;  
-  background-color: #ffffff;
-  ">
-</div>
+
+<div style=" position: absolute;
+left: 0px;
+top: 10px; 
+padding: 10px;
+z-index: 10;  
+background-color: #ffffff;
+"></div>
+
 <?php
 include("condb.php");
 

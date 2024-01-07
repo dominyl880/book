@@ -11,9 +11,10 @@ include("head.php");
   z-index: 10;  
   background-color: #ffffff;
   ">
-</div>
+  </div>
+
 <?php }elseif(@$_SESSION["status_user"]>=3){ ?>
-<div style=" position: absolute;
+  <div style=" position: absolute;
   left: 20px;
   top: 90px; 
   padding: 10px;
@@ -22,19 +23,21 @@ include("head.php");
   box-shadow: 5px 10px #888888;
   background-color: #FFCC33;
   "><i onclick="window.location='member.php';" class="bi bi-arrow-left-square-fill"></i>
-</div>
- <?php }elseif(@$_SESSION["status_user"]<=2){ ?>
-<div style=" position: absolute;
-  left: 20px;
-  top: 90px; 
-  padding: 10px;
-  z-index: 5;
-  border: 1px solid; 
-  box-shadow: 5px 10px #888888;
-  background-color: #FFCC33;
-  "><i onclick="window.location='admin.php';" class="bi bi-arrow-left-square-fill"></i>
-</div>
- <?php } ?>
+  </div>
+
+<?php }elseif(@$_SESSION["status_user"]<=2){ ?>
+  <div style=" position: absolute;
+    left: 20px;
+    top: 90px; 
+    padding: 10px;
+    z-index: 5;
+    border: 1px solid; 
+    box-shadow: 5px 10px #888888;
+    background-color: #FFCC33;
+    "><i onclick="window.location='admin.php';" class="bi bi-arrow-left-square-fill"></i>
+  </div>
+<?php } ?>
+
 <?php
 include("condb.php");
 include("navbar.php");

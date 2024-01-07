@@ -35,7 +35,7 @@ $row_history=mysqli_fetch_array($query_history);
         <?php 
                      $d = $row_history["date_start"];
                      $e = explode("-", $d); 
-                     $year4 = date("Y",strtotime($e[0]))+543; // ค่า ค.ศ.บวก 543 ทำให้เป็น พ.ศ.
+                     $year4 = $e[0]+543; // ค่า ค.ศ.บวก 543 ทำให้เป็น พ.ศ.
                      $myDATE=$d;
                      $ThMonth = array ( "ม.ค.", "ก.พ.", "มี.ค", "เม.ย.","พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.","ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค." );
                      $months = date("m",strtotime($myDATE))-1; // ค่าเดือน (1-12)
@@ -53,7 +53,7 @@ $row_history=mysqli_fetch_array($query_history);
         if($row_history["date_end"]){
                      $d2 = $row_history["date_end"];
                      $e2 = explode("-", $d2); 
-                     $year42 = date("Y",strtotime($e2[0]))+543; // ค่า ค.ศ.บวก 543 ทำให้เป็น พ.ศ.
+                     $year42 = $e2[0]+543; // ค่า ค.ศ.บวก 543 ทำให้เป็น พ.ศ.
                      $myDATE2=$d2;
                      $ThMonth2 = array ( "ม.ค.", "ก.พ.", "มี.ค", "เม.ย.","พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.","ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค." );
                      $months2 = date("m",strtotime($myDATE2))-1; // ค่าเดือน (1-12)

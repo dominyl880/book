@@ -21,8 +21,7 @@ include("navbar.php");
 
 $user_id=$_SESSION["user_id"];
 
-$sql_fav="SELECT * FROM `b_fev`
-WHERE user_id='$user_id' ";
+$sql_fav="SELECT * FROM `b_fev` WHERE user_id='$user_id' ";
 $query_fav=mysqli_query($con,$sql_fav);
 $row_fav=mysqli_num_rows($query_fav);
 // echo $row_fav;
